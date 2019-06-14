@@ -25,8 +25,6 @@ function read() {
     makeRequest("GET", `http://www.omdbapi.com/?apikey=6ba38886&t=${name}`)
     .then(res => {
         
-        console.log(res)
-
         const tableRow = document.createElement("tr");
         const tableData1 = document.createElement("td");
         const tableData2 = document.createElement("td");
