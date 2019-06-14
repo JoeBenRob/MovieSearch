@@ -32,7 +32,7 @@ function read() {
         const tableData2 = document.createElement("td");
         const tableData3 = document.createElement("td");
 
-        const table = document.createElement("table");
+        const table = document.getElementById("table");
 
         tableData1.innerText = "test";
         tableData2.innerText = "test";
@@ -42,7 +42,6 @@ function read() {
         tableRow.appendChild(tableData2);
         tableRow.appendChild(tableData3);
 
-        
         table.appendChild(tableRow);
 
     });
