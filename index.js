@@ -32,17 +32,16 @@ function read() {
         const tableData2 = document.createElement("td");
         const tableData3 = document.createElement("td");
 
-        const table = document.createElement("table");
+        const table = document.getElementById("table");
 
-        tableData1.innerText = "test";
-        tableData2.innerText = "test";
-        tableData3.innerText = "test";
+        tableData1.innerText = JSON.parse(res).Title;
+        tableData2.innerText = JSON.parse(res).Year;
+        tableData3.innerText = JSON.parse(res).Type;
 
         tableRow.appendChild(tableData1);
         tableRow.appendChild(tableData2);
         tableRow.appendChild(tableData3);
 
-        
         table.appendChild(tableRow);
 
     });
